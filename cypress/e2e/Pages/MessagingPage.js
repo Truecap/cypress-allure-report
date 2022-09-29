@@ -3,7 +3,7 @@ const home = new HomePage();
 
 class MessagingPage {
   get countryDrpDwn() {
-    return cy.get(".hIHHxS>div:nth-of-type(1)", { timeout: 1000 });
+    return cy.get(".hIHHxS>div:nth-of-type(1)", { timeout: 10000 });
   }
   get currencyDrpDwn() {
     return cy.get(".hIHHxS>div:nth-of-type(2)");
