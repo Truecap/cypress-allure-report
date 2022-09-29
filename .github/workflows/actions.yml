@@ -22,6 +22,9 @@ jobs:
             - run: npm i
             - name: run test
               run: npm run cy:headless:chrome
+
+            - name: Reports Generate
+              run: allure generate my-allure-results -o allure-report --clean
             - uses: actions/upload-artifact@master
               with:
                 name: allure-results
