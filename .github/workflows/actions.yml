@@ -6,10 +6,10 @@ on:
 
 jobs:
     Run_test:
-        runs-on: ubuntu-latest # Choosing OS
+        runs-on: ubuntu-20.04 # Choosing OS
         strategy:
             matrix:
-                node-version: 18
+                node-version: [18]
                 # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
         steps:
             - uses: actions/checkout@v2
