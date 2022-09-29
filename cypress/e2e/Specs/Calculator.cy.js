@@ -1,4 +1,4 @@
-import CalculatorPage from "../Pages/CalCulatorPage";
+import CalculatorPage from "../Pages/CalсulatorPage";
 import HomePage from "../Pages/HomePage";
 
 const home = new HomePage();
