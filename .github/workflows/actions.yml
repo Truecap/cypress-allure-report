@@ -6,7 +6,7 @@ on:
 
 jobs:
     Run_test:
-        runs-on: ubuntu-20.04 # Choosing OS
+        runs-on: ubuntu-latest # Choosing OS
         strategy:
             matrix:
                 node-version: 18
