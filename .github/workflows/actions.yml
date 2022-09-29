@@ -10,7 +10,7 @@ jobs:
         strategy:
             matrix:
                 node-version: [18]
-                # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+          
         steps:
             - uses: actions/checkout@v2
             - name: Use Node.js ${{ matrix.node-version }}
@@ -23,13 +23,6 @@ jobs:
             - name: run test
               run: npm run cy:headless:chrome
 
-              
-            # - uses: actions/upload-artifact@master
-            #   with:
-            #     name: allure-results
-            #     path: allure-results
-            #     retention-days: 20
-          
             - name: Get Allure history
               uses: actions/checkout@v2
               if: always()
