@@ -9,7 +9,7 @@ jobs:
         runs-on: ubuntu-20.04 # Choosing OS
         strategy:
             matrix:
-                node-version: [14.17.0]
+                node-version: 18
                 # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
         steps:
             - uses: actions/checkout@v2
@@ -23,13 +23,12 @@ jobs:
             - name: run test
               run: npm run cy:headless:chrome
 
-            - name: Reports Generate
-              run: allure generate my-allure-results -o allure-report --clean
-            - uses: actions/upload-artifact@master
-              with:
-                name: allure-results
-                path: allure-results
-                retention-days: 20
+              
+            # - uses: actions/upload-artifact@master
+            #   with:
+            #     name: allure-results
+            #     path: allure-results
+            #     retention-days: 20
           
             - name: Get Allure history
               uses: actions/checkout@v2
