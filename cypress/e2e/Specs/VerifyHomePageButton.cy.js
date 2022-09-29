@@ -8,8 +8,5 @@ describe("Verify home page button", () => {
     home.openAboutUsPage();
     home.clickHomePageBtn();
     home.validateHomePageButton();
-
-
   });
-
 });

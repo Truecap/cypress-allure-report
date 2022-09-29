@@ -1,7 +1,6 @@
 import CalculatorPage from "../Pages/CalCulatorPage";
 import HomePage from "../Pages/HomePage";
 
-
 const home = new HomePage();
 const calculator = new CalculatorPage();
 
@@ -11,6 +10,5 @@ describe("Verify saving calculator", () => {
     home.openCalculatorPage();
     calculator.chooseParams();
     calculator.validateSavingCalculator();
-});
-
+  });
 });

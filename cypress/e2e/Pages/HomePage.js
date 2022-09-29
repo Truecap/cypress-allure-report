@@ -65,7 +65,9 @@ class HomePage {
   get smsApiPricingDrpDwn() {
     return cy.get('header [href="/pricing/messaging"]');
   }
-  get aboutUsHeader() {return cy.get('[class*="clUAcO"]')};
+  get aboutUsHeader() {
+    return cy.get('[class*="clUAcO"]');
+  }
 
   launchWebApp() {
     cy.viewport(1920, 1080);
