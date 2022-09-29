@@ -166,7 +166,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:headless:chrome": "npx cypress run --browser chrome",
+    "cy:headless:chrome": "npx cypress run --browser chrome --env allure=true",
     "allure:generate": "npx allure generate allure-results --clean",
     "report": "npx allure generate reports/ui/allure-results --clean -o reports/ui/allure-report && allure open reports/ui/allure-report",
     "clear": "rm -r reports/** || true"
