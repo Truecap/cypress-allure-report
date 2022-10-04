@@ -23,6 +23,11 @@ npx cypress open
 
 cypress run --browser chrome
 
+## Plugins
+
+- [xpath](https://github.com/cypress-io/cypress-xpath)
+- [real-events](https://github.com/dmtrKovalenko/cypress-real-events)
+
 ## Allure-report
 
 # Installation
